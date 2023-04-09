@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/4dec905cb04b15142d24364af98cc2d1?family=GraphikLCGLight"
+       rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/base-style.css"/>
+    <link rel="stylesheet" href="static/css/base-style.css"/>
+    {% block custom-styles %}{% endblock %}
+    <title>{% block title %}Charity Code - Welcome{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nv__left-section">
+                <img src="static/images/code-svgrepo-com.svg">
+                <a href="#"><h4>Charity<br>Code</h4></a>
+                <div class="nv__btns">
+                    <button class="sign-up" type="button">Sign up</button>
+                    <button class="sign-in" type="button">Sign in</button>
+                </div>
+            </div>
+            <div class="nv__right-section">
+                <ul>
+                    <li><a href="" class=""><h3>About us</h3></a></li>
+                    <li><a href="" class=""><h3>Getting involved</h3></a></li>
+                    <li><a href="" class=""><h3>Contacts</h3></a></li>
+                    <li id="last-link"><a href="" class=""><h3>Our partners</h3></a></li>
+                    <div class="nv__btns-hiden">
+                        <button class="sign-up" type="button">Sign up</button>
+                        <button class="sign-in" type="button">Sign in</button>
+                    </div>
+                    <div class="nv__hiden-label">
+                        <img src="static/images/code-svgrepo-com.svg">
+                        <a href="#"><h4>Charity<br>Code</h4></a>
+                    </div>
+                </ul>
+            </div>
+            <button class="navbar-toggle" id="toggle-btn" onclick="toggleNavbar()">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+        </nav>
+    </header>
+
+    {% block page_content %}{% endblock %}
+
+    <footer class="footer-body">
+        <div class="footer-content">
+            <div class="footer-content-column">
+                <div class="clss">
+                    <h4>Community</h4>
+                    <a href=""><h5>Trusted organizations</h5></a>
+                    <a href=""><h5>For developers</h5></a>
+                    <a href=""><h5>Our partners</h5></a>
+                    <a href=""><h5>All projects</h5></a>
+                    <a href=""><h5>Suggestions</h5></a>
+                </div>
+            </div>
+            <div class="footer-content-column">
+                <div class="clss">
+                    <h4>Organization</h4>
+                    <a href=""><h5>Contact us</h5></a>
+                    <a href=""><h5>Creators</h5></a>
+                    <a href=""><h5>Something</h5></a>
+                    <a href=""><h5>Partners</h5></a>
+                </div>
+            </div>
+            <div class="footer-content-column">
+                <div class="clss">
+                    <h4>Help</h4>
+                    <a href=""><h5>Add project</h5></a>
+                    <a href=""><h5>Support</h5></a>
+                    <a href=""><h5>Something</h5></a>
+                    <a href=""><h5>Legal</h5></a>
+                </div>
+            </div>
+            <div class="footer-content-column">
+                <div class="clss">
+                    <h4>News</h4>
+                    <a href=""><h5>Blog</h5></a>
+                    <a href=""><h5>Press releases</h5></a>
+                    <a href=""><h5>Something</h5></a>
+                    <a href=""><h5>Partners</h5></a>
+                </div>
+            </div>
+            <div class="footer-content-column">
+                <div class="clss">
+                    <h4>Workspace</h4>
+                    <a href=""><h5>Safety</h5></a>
+                    <a href=""><h5>Tutorials</h5></a>
+                    <a href=""><h5>Something</h5></a>
+                    <a href=""><h5>Partners</h5></a>
+                </div>
+            </div>
+            <div class="footer-bottom-box">
+                <div class="footer-container">
+                    <div class="footer-bottom-left">
+                        <div class="footer-bottom-left-content">
+                            <img src="static/images/white-code-svgrepo-com.svg" height="42px">
+                            <h5>@ 2023 Charity Code</h5>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="" target="_blank">
+                            <img src="static/images/twitter-svgrepo-com.svg" height="32px">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="static/images/facebook-svgrepo-com.svg" height="32px">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="static/images/linkedin-svgrepo-com.svg" height="32px">
+                        </a>
+                        <a href="https://discordapp.com/users/738504895635783820/" target="_blank">
+                            <img src="static/images/discord-v2-svgrepo-com.svg" height="32px">
+                        </a>
+                        <a href="https://github.com/Flowzero" target="_blank">
+                            <img src="static/images/github-color-svgrepo-com.svg" height="32px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/scripts/toggle.js"></script>
+    <script src="https://kit.fontawesome.com/dd1fbe8583.js" crossorigin="anonymous"></script>
+</body>
+</html>

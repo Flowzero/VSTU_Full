@@ -1,0 +1,185 @@
+/* ---------Hero Section--------- */             /* ADJUST MARGIN AND PADDING
+                                                 SETTINGS OTHERWISE LOOKS AWFUL!!! */
+.hero-section {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__content {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    justify-content: left center;
+    align-items: center;
+    padding: 0 20%;
+    overflow: hidden;
+    letter-spacing: 1px;
+    color: white
+}
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+  }
+.hero__content span h2 {
+    margin: 0.75em 0;
+}
+  /* --------- Main page content --------- */
+  .body-container {
+    padding: 0 20%;
+    margin: 3em 0;
+  }
+  .title-position__right {
+    text-align: right;
+  }
+  .title-position__left {
+    text-align: left;
+  }
+  .title-position__right,
+  .title-position__left {
+    margin-bottom: 1.25em;
+  }
+  .text-poisition__left {
+    text-align: left;
+    /* margin */
+  }
+  .missions-container {
+    padding-bottom: 1.5em;
+    position: relative;
+  }
+  .missions-container::after {
+    background: #928E90;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+  }
+  .missions-text__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+.text-gradient {
+    background-image: linear-gradient(45deg, rgb(173, 67, 151), rgb(4, 0, 69));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* --------- Card section --------- */
+.projects-container {
+    margin: 2em 0 0 0;
+}
+.projects-container p {
+    margin-bottom: 2em;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+.card-bg {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.card {
+    width: calc(100%/4);
+    text-align: left;
+}
+.content {
+    color: white;
+    position: absolute;
+    margin: 5px 0px 0px 20px;
+    left: 0;
+}
+.card-categories {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.card-heading {
+    font-size: 1.45rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0,.2);
+}
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.container:hover > .card:not(:hover) .card-bg {
+    filter: brightness(0.5) blur(1px);
+}
+/* ------------REASONS TO JOIN ------------------- */
+.reasons-to-join__container {
+    margin-top: 3em;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1525px) {
+    .grid_container, .missions-text__grid {
+        display: block;
+    }
+    .grid_container > * {
+        margin-bottom: 20px;
+    }
+    .missions-text__grid > * {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1000px) {
+  .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        display: block;
+    }
+    .card {
+        padding-bottom: 20px;
+    }
+}
